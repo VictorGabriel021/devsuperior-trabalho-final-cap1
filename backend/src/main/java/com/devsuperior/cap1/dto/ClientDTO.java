@@ -3,6 +3,8 @@ package com.devsuperior.cap1.dto;
 import java.io.Serializable;
 import java.time.Instant;
 
+import com.devsuperior.cap1.entities.Client;
+
 public class ClientDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
@@ -25,7 +27,7 @@ public class ClientDTO implements Serializable {
 		this.children = children;
 	}
 	
-	public ClientDTO(ClientDTO entity) {
+	public ClientDTO(Client entity) {
 		this.id = entity.getId();
 		this.name = entity.getName();
 		this.cpf = entity.getCpf();
